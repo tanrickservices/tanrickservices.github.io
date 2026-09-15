@@ -33,7 +33,7 @@
         }
 
         .container {
-            max-width: 1100px;
+            max-width: 1200px;
             width: 100%;
         }
 
@@ -84,15 +84,20 @@
             line-height: 1.5;
         }
 
+        /* 3-Column Grid Layout for 4 Corners + Center Pillar */
         .grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
         }
 
-        @media (max-width: 768px) {
+        /* Responsive collapse for tablets and mobile devices */
+        @media (max-width: 992px) {
             .grid {
                 grid-template-columns: 1fr;
+            }
+            .center-pillar {
+                grid-order: -1; /* Push center card to top on small layouts */
             }
         }
 
@@ -111,8 +116,19 @@
             border-color: var(--accent-cyan);
         }
 
+        /* High-contrast highlight box explicitly for the center trading pillar */
+        .center-pillar {
+            border: 1px solid #2e3b4e;
+            background-color: #161920;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+
+        .center-pillar:hover {
+            border-color: var(--accent-cyan);
+        }
+
         .card-content h2 {
-            font-size: 1.4rem;
+            font-size: 1.35rem;
             font-weight: 600;
             letter-spacing: -0.02em;
             margin-bottom: 1rem;
@@ -171,7 +187,7 @@
     </div>
 
     <div class="grid">
-        <!-- Division 1: Trading Technical Analysis Services -->
+        <!-- Corner 1: Top Left -->
         <div class="card">
             <div class="card-content">
                 <h2>Trading Technical Analysis Services</h2>
@@ -180,16 +196,16 @@
             <a href="mailto:trading@://tanrickservices.com" class="btn">Connect</a>
         </div>
 
-        <!-- Division 2: Trading Services -->
-        <div class="card">
+        <!-- CENTER PILLAR: Active Capital Allocation (The Core Core) -->
+        <div class="card center-pillar">
             <div class="card-content">
                 <h2>Trading Services</h2>
-                <p>Managing over $150,000 in active allocated capital across institutional prop-firm frameworks, executing high-volume liquidity capturing strategies within daily macro volatility boxes.</p>
+                <p style="color: var(--text-main); font-weight: 500;">Managing over $150,000 in active allocated capital across institutional prop-firm frameworks, executing high-volume liquidity capturing strategies within daily macro volatility boxes.</p>
             </div>
-            <a href="mailto:trading@://tanrickservices.com" class="btn">Connect</a>
+            <a href="mailto:trading@://tanrickservices.com" class="btn" style="border-color: var(--accent-cyan); color: var(--accent-cyan);">Access Allocation Node</a>
         </div>
 
-        <!-- Division 3: IT Consultancy Services -->
+        <!-- Corner 2: Top Right -->
         <div class="card">
             <div class="card-content">
                 <h2>IT Consultancy Services</h2>
@@ -198,7 +214,7 @@
             <a href="mailto:consultancy@://tanrickservices.com" class="btn">Connect</a>
         </div>
 
-        <!-- Division 4: Property Services -->
+        <!-- Corner 3: Bottom Left -->
         <div class="card">
             <div class="card-content">
                 <h2>Property Services</h2>
@@ -207,7 +223,10 @@
             <a href="mailto:property@://tanrickservices.com" class="btn">Connect</a>
         </div>
 
-        <!-- Division 5: AI Training Services -->
+        <!-- Visual spacer to ensure grid symmetry -->
+        <div class="card-spacer" style="display: none;"></div>
+
+        <!-- Corner 4: Bottom Right -->
         <div class="card">
             <div class="card-content">
                 <h2>AI Training Services</h2>
