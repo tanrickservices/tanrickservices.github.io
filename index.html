@@ -85,11 +85,24 @@
             line-height: 1.5;
         }
 
-        /* Fixed 3-Column Symmetrical Grid Setup */
-        .grid {
+        .section-block {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .top-row {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .bottom-row {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (max-width: 992px) {
+            .top-row, .bottom-row {
+                grid-template-columns: 1fr;
+            }
         }
 
         .card {
@@ -107,7 +120,6 @@
             border-color: var(--accent-cyan);
         }
 
-        /* Institutional styling for the central financial allocation pillar */
         .center-pillar {
             border: 1px solid #2e3b4e;
             background-color: #151821;
@@ -116,20 +128,6 @@
 
         .center-pillar:hover {
             border-color: var(--accent-cyan);
-        }
-
-        /* Force specific bottom-row placement to maintain exact 4-corners layout symmetry */
-        .bottom-right-card {
-            grid-column: 3;
-        }
-
-        @media (max-width: 992px) {
-            .grid {
-                grid-template-columns: 1fr;
-            }
-            .bottom-right-card {
-                grid-column: auto;
-            }
         }
 
         .card-content h2 {
@@ -181,67 +179,72 @@
 <body>
 
 <div class="container">
+    <!-- Header Block -->
     <header>
         <h1>TanRick Services</h1>
         <p class="subtitle">Holding Infrastructure, Systems Architecture & Capital Allocation</p>
     </header>
 
+    <!-- Mission Statement Block -->
     <div class="mission-panel">
         <div class="mission-title">Corporate Mission Statement</div>
         <div class="mission-text">To engineer absolute institutional clarity, structure multi-divisional corporate holding matrices, and optimize high-performance algorithmic frameworks across global borders.</div>
     </div>
 
-    <div class="grid">
-        <!-- Corner 1: Top Left -->
+    <!-- Top Row: Primary Trading & Analysis Nodes -->
+    <div class="section-block top-row">
+        <!-- Division 1: Technical Analysis Page Link -->
         <div class="card">
             <div class="card-content">
                 <h2>Trading Technical Analysis Services</h2>
                 <p>Deploying proprietary systematic execution models, institutional order-flow analytics, and advanced volatility-space indicators engineered explicitly for high-velocity futures contract extraction.</p>
             </div>
-            <a href="mailto:trading@://tanrickservices.com" class="btn">Connect</a>
+            <a href="analysis/" class="btn">View Technical Specifications</a>
         </div>
 
-        <!-- CENTER PILLAR: Active Capital Allocation (The Core Engine) -->
+        <!-- Division 2: Active Capital Allocation Page Link -->
         <div class="card center-pillar">
             <div class="card-content">
                 <h2>Trading Services</h2>
                 <p style="color: var(--text-main); font-weight: 500;">Managing over $150,000 in active allocated capital across institutional prop-firm frameworks, executing high-volume liquidity capturing strategies within daily macro volatility boxes.</p>
             </div>
-            <a href="mailto:trading@://tanrickservices.com" class="btn" style="border-color: var(--accent-cyan); color: var(--accent-cyan);">Access Allocation Node</a>
+            <a href="trading/" class="btn" style="border-color: var(--accent-cyan); color: var(--accent-cyan);">Review Allocation Portfolio</a>
         </div>
+    </div>
 
-        <!-- Corner 2: Top Right -->
+    <!-- Bottom Row: Supporting Operational Enterprise Nodes -->
+    <div class="section-block bottom-row">
+        <!-- Division 3: IT Consultancy Page Link -->
         <div class="card">
             <div class="card-content">
                 <h2>IT Consultancy Services</h2>
                 <p>Designing high-availability enterprise infrastructure, bespoke database architectures, and secure, containerized software systems tailored for high-frequency environments.</p>
             </div>
-            <a href="mailto:consultancy@://tanrickservices.com" class="btn">Connect</a>
+            <a href="consultancy/" class="btn">Examine Enterprise Solutions</a>
         </div>
 
-        <!-- Corner 3: Bottom Left -->
+        <!-- Division 4: Property Page Link -->
         <div class="card">
             <div class="card-content">
                 <h2>Property Services</h2>
                 <p>Structuring cross-border real estate acquisitions, strategic asset insulation frameworks, and high-yield physical portfolio optimization across international tax boundaries.</p>
             </div>
-            <a href="mailto:property@://tanrickservices.com" class="btn">Connect</a>
+            <a href="property/" class="btn">Inspect Asset Portfolio</a>
         </div>
 
-        <!-- Empty slot in grid layout skipped automatically to preserve visual symmetry -->
-
-        <!-- Corner 4: Bottom Right (Forced to Third Column slot) -->
-        <div class="card bottom-right-card">
+        <!-- Division 5: AI Training Page Link -->
+        <div class="card">
             <div class="card-content">
                 <h2>AI Training Services</h2>
                 <p>Optimizing deep neural network data scaling, advanced LLM behavioral tuning, prompt engineering architectures, and automated semantic workflow systems.</p>
             </div>
-            <a href="mailto:aitraining@://tanrickservices.com" class="btn">Connect</a>
+            <a href="aitraining/" class="btn">Review Training Frameworks</a>
         </div>
     </div>
 
+    <!-- Corporate Footer Node -->
     <footer>
-        <p>&copy; 2026 TanRick Services. All rights reserved. Executive Node: ceo@tanrickservices.com</p>
+        <p>&copy; 2026 TanRick Services. All rights reserved. Executive Command Node: ceo@tanrickservices.com</p>
     </footer>
 </div>
 
