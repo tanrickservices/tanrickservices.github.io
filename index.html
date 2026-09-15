@@ -40,6 +40,7 @@
         header {
             margin-bottom: 3rem;
             padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
         }
 
         h1 {
@@ -84,21 +85,11 @@
             line-height: 1.5;
         }
 
-        /* 3-Column Grid Layout for 4 Corners + Center Pillar */
+        /* Fixed 3-Column Symmetrical Grid Setup */
         .grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
-        }
-
-        /* Responsive collapse for tablets and mobile devices */
-        @media (max-width: 992px) {
-            .grid {
-                grid-template-columns: 1fr;
-            }
-            .center-pillar {
-                grid-order: -1; /* Push center card to top on small layouts */
-            }
         }
 
         .card {
@@ -116,15 +107,29 @@
             border-color: var(--accent-cyan);
         }
 
-        /* High-contrast highlight box explicitly for the center trading pillar */
+        /* Institutional styling for the central financial allocation pillar */
         .center-pillar {
             border: 1px solid #2e3b4e;
-            background-color: #161920;
-            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+            background-color: #151821;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
         }
 
         .center-pillar:hover {
             border-color: var(--accent-cyan);
+        }
+
+        /* Force specific bottom-row placement to maintain exact 4-corners layout symmetry */
+        .bottom-right-card {
+            grid-column: 3;
+        }
+
+        @media (max-width: 992px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            .bottom-right-card {
+                grid-column: auto;
+            }
         }
 
         .card-content h2 {
@@ -196,7 +201,7 @@
             <a href="mailto:trading@://tanrickservices.com" class="btn">Connect</a>
         </div>
 
-        <!-- CENTER PILLAR: Active Capital Allocation (The Core Core) -->
+        <!-- CENTER PILLAR: Active Capital Allocation (The Core Engine) -->
         <div class="card center-pillar">
             <div class="card-content">
                 <h2>Trading Services</h2>
@@ -223,11 +228,10 @@
             <a href="mailto:property@://tanrickservices.com" class="btn">Connect</a>
         </div>
 
-        <!-- Visual spacer to ensure grid symmetry -->
-        <div class="card-spacer" style="display: none;"></div>
+        <!-- Empty slot in grid layout skipped automatically to preserve visual symmetry -->
 
-        <!-- Corner 4: Bottom Right -->
-        <div class="card">
+        <!-- Corner 4: Bottom Right (Forced to Third Column slot) -->
+        <div class="card bottom-right-card">
             <div class="card-content">
                 <h2>AI Training Services</h2>
                 <p>Optimizing deep neural network data scaling, advanced LLM behavioral tuning, prompt engineering architectures, and automated semantic workflow systems.</p>
