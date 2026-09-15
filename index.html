@@ -38,6 +38,7 @@
             font-weight: 700;
             letter-spacing: 1px;
             color: var(--text-main);
+            text-decoration: none;
         }
 
         .logo span {
@@ -97,6 +98,9 @@
             border: 1px solid var(--border-color);
             border-radius: 8px;
             padding: 2rem;
+            text-decoration: none;
+            color: inherit;
+            display: block;
             transition: transform 0.3s ease, border-color 0.3s ease;
         }
 
@@ -133,9 +137,9 @@
 <body>
 
     <header>
-        <div class="logo">TANRICK<span>SERVICES</span></div>
+        <a href="/" class="logo">TANRICK<span>SERVICES</span></a>
         <nav>
-            <a href="founder.html">Founder & Publications</a>
+            <a href="/founder/">Founder &amp; Publications</a>
         </nav>
     </header>
 
@@ -146,22 +150,29 @@
 
     <div class="container">
         <div class="grid">
-            <div class="card">
+            <!-- Link directly to the trading folder -->
+            <a href="/trading/" class="card">
                 <h3>Quantitative Simulation &amp; Evaluation</h3>
                 <p>Stress-testing advanced execution infrastructure and systemic risk boundaries across distributed institutional frameworks. Providing remote performance diagnostics, high-velocity liquidity simulation, and real-time execution reporting within volatile macro environments.</p>
-            </div>
-            <div class="card">
+            </a>
+
+            <!-- Link directly to the analysis folder -->
+            <a href="/analysis/" class="card">
                 <h3>Systematic Analytics &amp; Pattern Synthesis</h3>
                 <p>Deploying proprietary data visualization systems and advanced structural indicators engineered for high-fidelity pattern integrity detection. Translating dense market data clusters into actionable, low-distortion technical models.</p>
-            </div>
-            <div class="card">
+            </a>
+
+            <!-- Link directly to the consultancy folder -->
+            <a href="/consultancy/" class="card">
                 <h3>Enterprise Systems Consulting</h3>
                 <p>Deploying high-availability systems engineering, cloud identity architectures, and advanced endpoint deployment frameworks derived from decades of infrastructure management within Tier-1 global digital enterprises. Specializing in institutional-grade configuration management, PKI security, and lifecycle automation.</p>
-            </div>
-            <div class="card">
+            </a>
+
+            <!-- Link directly to the property folder -->
+            <a href="/property/" class="card">
                 <h3>Regional Infrastructure Logistics</h3>
                 <p>Structuring localized residential asset deployment and strategic property insulation frameworks across emerging corridors. Focusing on optimized physical portfolio logistics and scalable housing models designed to integrate with and stimulate regional labor market growth.</p>
-            </div>
+            </a>
         </div>
     </div>
 
