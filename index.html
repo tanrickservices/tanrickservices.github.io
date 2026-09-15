@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TanRick Services | Institutional Systems & Capital Allocation</title>
+    <style>
+        :root {
+            --bg-color: #0d0e12;
+            --card-bg: #13151a;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --accent-cyan: #06b6d4;
+            --border-color: #1f2937;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            padding: 4rem 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            width: 100%;
+        }
+
+        header {
+            margin-bottom: 3rem;
+            padding-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            letter-spacing: -0.05em;
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+
+        .mission-panel {
+            background-color: #171923;
+            border-left: 4px solid var(--accent-cyan);
+            border-top: 1px solid var(--border-color);
+            border-right: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .mission-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--accent-cyan);
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+
+        .mission-text {
+            color: var(--text-main);
+            font-size: 1.15rem;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            line-height: 1.5;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: border-color 0.2s ease;
+        }
+
+        .card:hover {
+            border-color: var(--accent-cyan);
+        }
+
+        .card-content h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .card-content p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            color: var(--text-main);
+            border: 1px solid var(--text-main);
+            padding: 0.75rem 1.5rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border-radius: 4px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            width: 100%;
+        }
+
+        .btn:hover {
+            background-color: var(--text-main);
+            color: var(--bg-color);
+        }
+
+        footer {
+            margin-top: 4rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 2rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>TanRick Services</h1>
+        <p class="subtitle">Holding Infrastructure, Systems Architecture & Capital Allocation</p>
+    </header>
+
+    <div class="mission-panel">
+        <div class="mission-title">Corporate Mission Statement</div>
+        <div class="mission-text">To engineer absolute institutional clarity, insulate sovereign family capital, and optimize high-performance algorithmic frameworks across global borders.</div>
+    </div>
+
+    <div class="grid">
+        <!-- Division 1: Trading Services -->
+        <div class="card">
+            <div class="card-content">
+                <h2>Trading Services</h2>
+                <p>The direct commercial launchpad for your Black Box indicators, custom TradingView invite-only execution tools, and professional funded-trader software suites.</p>
+            </div>
+            <a href="mailto:trading@://tanrickservices.com" class="btn">Connect</a>
+        </div>
+
+        <!-- Division 2: IT Consultancy Services -->
+        <div class="card">
+            <div class="card-content">
+                <h2>IT Consultancy Services</h2>
+                <p>Your enterprise-level framework for custom system engineering, network layout optimizations, and software development frameworks.</p>
+            </div>
+            <a href="mailto:consultancy@://tanrickservices.com" class="btn">Connect</a>
+        </div>
+
+        <!-- Division 3: Property Services -->
+        <div class="card">
+            <div class="card-content">
+                <h2>Property Services</h2>
+                <p>Strategic cross-border real estate acquisitions, long-term portfolio optimization, asset protection frameworks, and direct corporate lease allocations.</p>
+            </div>
+            <a href="mailto:property@://tanrickservices.com" class="btn">Connect</a>
+        </div>
+
+        <!-- Division 4: AI Training Services -->
+        <div class="card">
+            <div class="card-content">
+                <h2>AI Training Services</h2>
+                <p>Advanced algorithmic model refinement, comprehensive large-scale data testing, prompt optimization architectures, and automated workflow logic systems.</p>
+            </div>
+            <a href="mailto:aitraining@://tanrickservices.com" class="btn">Connect</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 TanRick Services. All rights reserved. Executive Node: ceo@tanrickservices.com</p>
+    </footer>
+</div>
+
+</body>
+</html>
