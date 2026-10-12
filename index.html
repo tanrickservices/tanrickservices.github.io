@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TanRick Services | Enterprise Architecture & Quantitative Analytics</title>
+    <style>
+        :root {
+            --bg-color: #0d0f12;
+            --card-bg: #14181f;
+            --accent-color: #00f2fe;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --border-color: #222b35;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: var(--text-main);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+            border: 1px solid var(--border-color);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+
+        .hero {
+            max-width: 800px;
+            margin: 5rem auto;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .hero p {
+            color: var(--text-muted);
+            font-size: 1.15rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem 5rem 2rem;
+        }
+
+        /* Restructured Matrix Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-color);
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+            letter-spacing: -0.3px;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        /* Highlight border specifically for the Core Atlas Engine */
+        .card.core-engine {
+            border-color: rgba(0, 242, 254, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Maintain visual balance on smaller screens */
+        @media (max-width: 900px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="/" class="logo">TANRICK<span>SERVICES</span></a>
+        <nav>
+            <a href="/founder/">Founder &amp; Publications</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Translating Complex Systems Expertise into Scalable Infrastructure</h1>
+        <p>Engineering high-availability enterprise environments, systematic quantitative data models, and strategic long-term regional development assets.</p>
+    </div>
+
+    <div class="container">
+        <div class="grid">
+            
+            <!-- ROW 1, NODE 1: Trading -->
+            <a href="/trading/" class="card">
+                <h3>Quantitative Simulation &amp; Evaluation</h3>
+                <p>Stress-testing advanced execution infrastructure and systemic risk boundaries across distributed institutional frameworks. Providing remote performance diagnostics, high-velocity liquidity simulation, and real-time execution reporting within volatile macro environments.</p>
+            </a>
+
+            <!-- ROW 1, NODE 2: Centered Centerpiece Asset -->
+            <a href="/atlas/" class="card core-engine">
+                <h3>TanRick 2e AI // Atlas Gen 1</h3>
+                <p>Deploying a private, air-gapped sovereign intelligence core running natively on dedicated local dual-GPU hardware. Orchestrating advanced un-neutered reasoning networks, zero-telemetry document indexing, and accelerated voice-to-logic pipelines to synthesize complex systems criteria with zero internet dependencies.</p>
+            </a>
+
+            <!-- ROW 1, NODE 3: Shifted to Top Right -->
+            <a href="/analysis/" class="card">
+                <h3>Systematic Analytics &amp; Pattern Synthesis</h3>
+                <p>Deploying proprietary data visualization systems and advanced structural indicators engineered for high-fidelity pattern integrity detection. Translating dense market data clusters into actionable, low-distortion technical models.</p>
+            </a>
+
+            <!-- ROW 2, NODE 1: AI Training Architecture -->
+            <a href="/aitraining/" class="card">
+                <h3>AI Training &amp; Cognitive Architecture</h3>
+                <p>Designing bespoke cognitive frameworks, behavioral model tuning, and automated semantic workflows. Building structural translation protocols that turn implicit systems expertise into legible, high-efficiency digital training assets derived from published methodology.</p>
+            </a>
+
+            <!-- ROW 2, NODE 2: Logistics Portfolio Layout -->
+            <a href="/property/" class="card">
+                <h3>Regional Infrastructure Logistics</h3>
+                <p>Structuring localized residential asset deployment and strategic property insulation frameworks across emerging corridors. Focusing on optimized physical portfolio logistics and scalable housing models designed to integrate with and stimulate regional labor market growth.</p>
+            </a>
+
+            <!-- ROW 2, NODE 3: Hard Locked to Bottom Right -->
+            <a href="/consultancy/" class="card">
+                <h3>Enterprise Systems Consulting</h3>
+                <p>Deploying high-availability systems engineering, cloud identity architectures, and advanced endpoint deployment frameworks derived from decades of infrastructure management within Tier-1 global digital enterprises. Specializing in institutional-grade configuration management, PKI security, and lifecycle automation.</p>
+            </a>
+
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 TanRick Services. All rights reserved. 
+    </footer>
+
+</body>
+</html>
